@@ -17,6 +17,7 @@ Pros:
   - no edge cases
   - highest accuracy
   - ability to change the spatial reference identifier, or SRID
+
 Cons:
   - highest complexity, including non-SQL-standard column types and potentially some understanding of planar coordinate systems
   - requires the use of PostGIS provided columns (or requires you to cast the data type to a PostGIS spatial type)
@@ -30,13 +31,16 @@ Pros:
   - can be used with standard Postgres columns
   - no edge cases
   - good support for GIST indexing
+
 Cons:
   - assumes the earth is perfectly spherical
 
 ### ElasticSearch
+
   Pros
     - highest accuracy and handle super large dataset with ease
     - hihgly performant
+
   Cons:
     - standalone Search service
 
